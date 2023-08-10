@@ -1,0 +1,26 @@
+{
+  "name": "dasborad",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.17.3",
+    "astro": "^2.10.5",
+    "astro-compressor": "^0.4.0",
+    "astro-purgecss": "^2.3.0",
+    "autoprefixer": "^10.4.14",
+    "sharp": "^0.32.4"
+  },
+  "devDependencies": {
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.27",
+    "rucksack-css": "^1.0.2",
+    "sass": "^1.65.1"
+  }
+}
