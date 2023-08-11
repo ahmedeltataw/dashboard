@@ -1,0 +1,104 @@
+@mixin nav-sticky ($name) {
+    @keyframes #{$name} {
+        0% {
+            top: -100px;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+}
+
+// up & down
+@mixin up_down ($name) {
+    @keyframes #{$name} {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+// rotate
+@mixin rotate_360($name) {
+    @keyframes #{$name} {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+// shaking
+@mixin shaking ($name) {
+    @keyframes #{$name} {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        40% {
+            transform: rotate(30deg);
+        }
+
+        80% {
+            transform: rotate(-30deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+// scale
+@mixin scale ($name) {
+    @keyframes #{$name} {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.15);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+// wave -1
+@mixin wave_1 ($name) {
+    @keyframes #{$name} {
+        0% {
+            background-position-x: 1000px;
+        }
+
+        100% {
+            background-position-x: 0px;
+        }
+    }
+}
+
+@mixin wave_2 ($name) {
+    @keyframes #{$name} {
+        0% {
+            background-position-x: 0px;
+        }
+
+        100% {
+            background-position-x: 1000px;
+        }
+    }
+}

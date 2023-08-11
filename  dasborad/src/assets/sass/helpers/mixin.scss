@@ -1,0 +1,60 @@
+@use '../layouts/color.scss' ;
+
+@mixin input {
+    width: 100%;
+    height: 65px;
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: $transition;
+    font-size: 1.2rem;
+}
+
+// overlay background
+@mixin overlay ($color , $alpha) {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $alpha);
+}
+
+// flex
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+// center margin
+@mixin MarginCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// img
+@mixin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// section
+@mixin section ($height) {
+    width: 100%;
+    min-height: $height;
+    padding-top: $MTsection;
+}
+
+// main heading
+@mixin mainHeading {
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8vh;
+}
+

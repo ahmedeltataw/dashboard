@@ -1,0 +1,16 @@
+---
+export interface prpos {
+    title:string,
+    des:string,
+    img:any,
+}
+const {title,des,img} =Astro.props;
+import { Image } from '@astrojs/image/components';
+---
+<div class="img-form">
+    <Image src={img} alt='logo' quality={50} format='avif'/>
+</div>
+<div class="details-form">
+    <h1> {title} </h1>
+    <p>{des}</p>
+</div>

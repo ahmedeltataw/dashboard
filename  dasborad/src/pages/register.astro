@@ -1,0 +1,22 @@
+---
+import TopForm from "../components/topForm.astro";
+import FormRegister from "../components/formRegister.astro";
+import logo from "../../public/image/logo.png"
+---
+<section class="register">
+    <div class="container">
+        <div class="row">
+            <!-- half img -->
+            <div class="col-6-lg col-6-md">
+                <div class="half-right"></div>
+            </div>
+            <!-- half form -->
+            <div class="col-6-lg col-6-md">
+                <div class="half-left">
+                    <TopForm img={logo} title=" تسجيل حساب  " des=" احصل على حسابك المجاني الآن " />
+                    <FormRegister />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

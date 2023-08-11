@@ -1,0 +1,29 @@
+---
+export interface props {
+    title:string,
+    description:string
+}
+const {title , description} = Astro.props;
+// import astro library
+import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
+//  css library
+	import "../assets/css/AE-normalize.css";
+	import "../assets/sass/layouts/globel.scss";
+
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description}>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon"  href='/image/favicon.webp' />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" ></GoogleFontsOptimizer>
+	</head>
+
+	<body >
+			<slot />
+	</body>
+</html>

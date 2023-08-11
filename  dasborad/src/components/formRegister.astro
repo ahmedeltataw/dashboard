@@ -1,0 +1,52 @@
+---
+// import components
+import Input from "./input.astro";
+    const registerData = [
+        {
+            fieldName:" رقم الهوية الوطنية لألفراد ",
+            typeField:"text ",
+        },
+        {
+            fieldName:" اسم مستخدم (خاص بالمنشآت) ",
+            typeField:"text",
+        },
+        {
+            fieldName:" رقم الجوال ",
+            typeField:"number",
+        },
+        {
+            fieldName:" البريد الإلكتروني ",
+            typeField:"email ",
+        },
+        {
+            fieldName:" كلمة المرور ",
+            typeField:"password",
+        },
+        {
+            fieldName:" إعادة كتابة كلمة المرور ",
+            typeField:"password",
+        },
+        {
+            fieldName:" الر قم العام للمجموعة ",
+            typeField:"number",
+        },
+        {
+            fieldName:" الرمز المرئي ",
+            typeField:"number",
+        },
+    ]
+---
+<form action="#!">
+    <div class="row">
+        {
+            registerData.map((e)=>(
+                <div class="col-6-lg col-6-md col-sm-12">
+                    <Input title={e.fieldName} type={e.typeField} />
+                </div>
+            ))
+        }
+        <div class="col-12">
+            <button aria-label="button" type="submit" class="AEbtn"> تسجيل </button>
+        </div>
+    </div>
+</form>

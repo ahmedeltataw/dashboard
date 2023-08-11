@@ -1,0 +1,69 @@
+@use '../helpers/mixin' as *;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo';
+}
+
+html {
+    font-size: 16px;
+}
+
+html {
+    direction: rtl;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    height: unset;
+    outline: 0;
+    border: none;
+}
+
+img,
+video,
+svg {
+    width: 100%;
+    display: block;
+}
+
+section {
+    // @include section(100vh);
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(24, 24, 24, .8);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #19819c;
+    border-radius: 10px;
+
+}

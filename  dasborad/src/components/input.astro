@@ -1,0 +1,12 @@
+---
+export interface props {
+    title:string,
+    type:string,
+}
+const {title , type } = Astro.props;
+---
+<div class="form-group">
+    <label for={type}> {title} </label>
+    <input type={type} name={type}  placeholder={title}>
+</div>
+
